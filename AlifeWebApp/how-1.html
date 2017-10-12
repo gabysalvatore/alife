@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+    <!-- animsition.css -->
+    <link rel="stylesheet" href="animsition.min.css">
+      <!--Import Google Icon Font-->
+      <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+      <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+
+    <body class="animsition" style="background-color: #061539; overflow:hidden; ">
+      <div class="z-depth-1" style = "background-color: #223164; color:#ffffff; padding: 5px; margin:20px 25px 20px 25px; height:68px;">
+            <p style="position: absolute; bottom: 923px; right: 150px;font-weight: 400; font-size: 40px"class="header, center-align">How and When was I used?</p>
+      </div>
+
+      <div class="z-depth-1" style = "background-color: #4f628e; color:#ffffff; padding: 5px; margin:20px 25px 20px 25px;height:126px">
+            <p style="width: 696px; position: absolute; bottom: 796px; right: 35px;font-size: 25px" class="caption, center-align">This arch was originally located on the facade of Alife cathedral. <span style="font-weight: 700;"> Click the video below. </span>Here is a reconstruction of the 12th cent. church before it was destroyed by an earthquake. </p>
+      </div>
+
+      <div style="border-style:solid; border-width:0px 27px 0px 27px; border-color:#061539;height:32vh;">
+            <video width="775" height="400" onclick="this.play();" style="position: absolute; bottom: 390px; right: -5px;">
+              <source src="AlifeVid.mp4" type="video/mp4" style="display:block;margin:auto;">
+      </div>
+
+      <div class="z-depth-1" style = "background-color: #223164; color:#ffffff;  padding:0.1px; margin-top:95px; margin-right:25px; margin-left:25px; height:40px;">
+            <p style="position: absolute; bottom: 314px; right: 40px; width: 700px; font-size: 20px; " class="caption, center-align">Click to see similar church portals found at sites across Campania. </p>
+      </div>
+
+      <div  class="z-depth-1" style = "background-color: #4f628e; color:#ffffff; padding: 0px; margin:25px; margin-top:0; height: 225px;">
+        <button data-target="modal1" style="box-shadow: none; background-image:url(images/how-1-1-1.png); background-color:#4f628e; background-repeat: no-repeat;background-position: center;background-size: 110px 200px; width:230px; height:220px; margin-right: -10px; margin-top: 5px; margin-left:15px;"class="btn"></button>
+        <div id="modal1" class="modal">
+          <div class="modal-content" style="margin-bottom:0px;">
+            <img class="responsive-img" style="height:35vh;width:55vh;display: block;margin: auto;" src="images/how-1-1-2.jpg">
+            <p style="color: #4f628e;" class="center-align">Calvi Vecchia, Campania, Italy, early 12th cent.</p>
+          </div>
+        </div>
+
+        <button data-target="modal2" style="box-shadow: none; background-image:url(images/how-1-2-1.png); background-repeat: no-repeat;background-position: center;background-size: 110px 200px; width:230px; height:220px; margin-top: 5px;background-color:#4f628e; " class="btn"></button>
+        <div id="modal2" class="modal">
+          <div class="modal-content" style="margin-bottom:0px;">
+          <img style="height:60vh;width: 47vh;display: block;margin: auto;" src=images/how-1-2-2.jpg>
+            <p style="color:#4f628e;" class="center-align">Caserta Vecchia, Campania, Italy, early 12th cent. </p>
+          </div>
+        </div>
+
+        <button data-target="modal3" style="box-shadow: none; background-image:url(images/how-1-3-1.png); background-repeat: no-repeat;background-position: center;background-size: 110px 200px;  width:230px; height:220px; margin-left:0px; margin-top: 5px; margin-right:10px;background-color:#4f628e;" class="btn"></button>
+        <div id="modal3" class="modal">
+          <div class="modal-content" style="margin-bottom:0px;">
+            <img style="height:55vh;width:55vh;display: block;margin: auto;" src=images/how-1-3-2.jpg>
+            <p style="color:#4f628e;" class="center-align">Sessa Aurunca, Campania, Italy, early 12th cent. </p>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="nav-wrapper z-depth-3" style="background-color:#4f628e; color:#4A766E; height:6vh">
+          <nav style="background-color:#4f628e;">
+        <a href="#" class="brand-logo"></a>
+        <ul id="nav-mobile" class="left show-on-small">
+          <li><a href="home.html" class="animsition-link" style="background-color: #4f628e; color: #ffffff; width: 170px; font-size: 30px; font-weight: 600"><i class="material-icons left">home</i>HOME</a></li>
+          <li><a href="home.html" class="animsition-link" style="background-color: #4f628e; color: #ffffff; width: 120px; font-size: 20px; font-weight: 400"><i class="material-icons left">arrow_back</i>BACK</a></li>
+          <li><a style="background-color: #4f628e; color: #4f628e; width: 345px; font-size: 20px; font-weight: 400">hello</a></li>
+          <li><a href="how-2.html" class="animsition-link" style="background-color: #4f628e; color: #ffffff; width: 120px; font-size: 20px; font-weight: 400"><i class="material-icons right">arrow_forward</i>NEXT</a></li>
+        </ul>
+        </nav>
+      </div>
+
+
+      <!--Import jQuery before materialize.js-->
+      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+
+      <script type="text/javascript">
+        $(document).ready(function(){
+          $('#modal1').modal({ready: function(modal, trigger) {
+            $('.carousel').carousel();
+          }});
+          $('#modal2').modal({ready: function(modal, trigger) {
+            $('.carousel').carousel();
+          }});
+          $('#modal3').modal({ready: function(modal, trigger) {
+            $('.carousel').carousel();
+          }});
+        });
+      </script>
+
+    <script src="animsition.min.js"></script>
+      <script type="text/javascript">
+$(document).ready(function() {
+  $('.animsition').animsition({
+    inClass: 'fade-in',
+    outClass: 'fade-out-left',
+    inDuration: 1500,
+    outDuration: 800,
+    linkElement: '.animsition-link',
+    // e.g. linkElement: 'a:not([target="_blank"]):not([href^="#"])'
+    loading: true,
+    loadingParentElement: 'body', //animsition wrapper element
+    loadingClass: 'animsition-loading',
+    loadingInner: '', // e.g '<img src="loading.svg" />'
+    timeout: false,
+    timeoutCountdown: 5000,
+    onLoadEvent: true,
+    browser: [ 'animation-duration', '-webkit-animation-duration'],
+    // "browser" option allows you to disable the "animsition" in case the css property in the array is not supported by your browser.
+    // The default setting is to disable the "animsition" in a browser that does not support "animation-duration".
+    overlay : false,
+    overlayClass : 'animsition-overlay-slide',
+    overlayParentElement : 'body',
+    transition: function(url){ window.location.href = url; }
+  });
+});
+</script>
+    </body>
+  </html>

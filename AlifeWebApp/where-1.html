@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+    <!-- animsition.css -->
+    <link rel="stylesheet" href="animsition.min.css">
+      <!--Import Google Icon Font-->
+      <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+      <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+
+    <body class="animsition" style="background-color: #0b5345; overflow:hidden;">
+      <div class="z-depth-1" style = "background-color: #0e6655; color:#ffffff; padding: 5px; margin:20px 25px 20px 25px; height:68px;">
+            <p style="position: absolute; bottom: 923px; right: 180px;font-weight: 400; font-size: 40px"class="header, center-align">Where do I come from?</p>
+      </div>
+
+      <div class="z-depth-1" style = "background-color: #117a65; color:#ffffff; padding: 0.5px; margin:20px 25px 20px 25px;height:126px">
+            <p style="width: 696px; position: absolute; bottom: 796px; right: 40px;font-size: 25px" class="caption, center-align">This arch is from Alife, a small town in Southern Italy near Naples. <span style="font-weight: 700;">Tap the button below to see the overhead view.</span> It was founded by the Romans and built on an ancient grid plan.</p>
+      </div>
+
+      <div style="border-style:solid; border-width:0px 27px 0px 27px; border-color:#0b5345;height:30vh">
+            <img id="sat" class="responsive-img" src="images/where-1-secondary.jpg" style="width: 715px; height:400px;display:block;margin:auto;position: absolute; " >
+            <img id = "map" class="responsive-img" src="images/where-1-primary.jpg" style="width: 715px; height:400px;display:block;margin:auto;position: absolute; " >
+            <a style="padding: 5px ; position: absolute; bottom: 400px; right: 585px;background-color: #0b5345; color: #ffffff; width: 130px; font-size: 18px; font-weight: 400" onclick="myFunction()"><i class="material-icons left">map</i>Map view</a>
+            <a style="padding: 5px; position: absolute; bottom: 400px; right: 50px;background-color: #0b5345; color: #ffffff; width: 170px; font-size: 18px; font-weight: 400" onclick="myFunct()"><i class="material-icons right">satellite</i>Overhead view</a>
+      </div>
+
+      <div class="z-depth-1" style = "background-color: #0e6655; color:#ffffff;  padding:0.1px; margin-top:115px; margin-right:25px; margin-left:25px; height:40px;">
+            <p style="position: absolute; bottom: 314px; right: 40px; width: 700px; font-size: 20px; " class="caption, center-align">Click below to explore photographs of Alife through the ages. </p>
+      </div>
+
+      <div  class="z-depth-1" style = "background-color: #117a65; color:#ffffff; padding: 5px; margin:25px; margin-top:0; height: 225px;">
+        <button data-target="modal1" style="background-image:url(images/where-1-Rome-4-BW2.jpg); background-size: 200px 160px; border:5px solid #ffffff; width:200px; height:160px; margin-right: 30px; margin-top: 25px; margin-left:20px; color: #0e6655; font-size: 25px;"class="btn">Alife Under Ancient Rome </button>
+        <div id="modal1" class="modal" style="height:34vh;width:610px;display:center;background-color:black;">
+          <video width="610px" loop autoplay> <!-- set for landscape-->
+            <source src="rome.mp4" type="video/mp4"> <!-- Not on internet explorer 8/earlier versions-->
+          </video>
+        </div>
+        <button data-target="modal2" style="background-image:url(images/where-1-middle-2-BW.jpg); background-size: 200px 160px; border:5px solid #ffffff; width:200px; height:160px; margin-top: 25px; color: #0e6655; font-size: 25px;" class="btn">Alife in the Middle Ages</button>
+        <div id="modal2" class="modal" style="height:34vh;width:610px;display:center;background-color:black;">
+          <video width="610px" loop autoplay> <!-- set for landscape-->
+            <source src="middle.mp4" type="video/mp4"> <!-- Not on internet explorer 8/earlier versions-->
+          </video>
+          <div class="modal-footer">
+            <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Close</a>
+          </div>
+        </div>
+        <button data-target="modal3" style="background-image:url(images/where-1-WW1-3-BW.jpg); background-size: 200px 160px; border:5px solid #ffffff; width:200px; height:160px; margin-left:30px; margin-top: 25px; margin-right:20px; color: #0e6655; font-size: 25px;" class="btn">Alife during World War II</button>
+        <div id="modal3" class="modal" style="height:34vh;width:610px;display:center;background-color:black;">
+          <video width="610px" loop autoplay> <!-- set for landscape-->
+            <source src="WWII.mp4" type="video/mp4"> <!-- Not on internet explorer 8/earlier versions-->
+          </video>
+          <div class="modal-footer">
+            <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Close</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="nav-wrapper z-depth-3" style="background-color:#138d75; color:#4A766E; height:6vh">
+          <nav style="background-color:#138d75;">
+        <a href="#" class="brand-logo"></a>
+        <ul id="nav-mobile" class="left show-on-small">
+          <li><a href="home.html" class="animsition-link" style="background-color: #138d75; color: #ffffff; width: 170px; font-size: 30px; font-weight: 600"><i class="material-icons left ">home</i>HOME</a></li>
+          <li><a href="home.html" class="animsition-link" style="background-color: #138d75; color: #ffffff; width: 120px; font-size: 20px; font-weight: 400"><i class="material-icons left ">arrow_back</i>BACK</a></li>
+          <li><a style="background-color: #138d75; color: #138d75; width: 345px; font-size: 20px; font-weight: 400">hello</a></li>
+          <li><a href="where-2.html" class="animsition-link" style="background-color: #138d75; color: #ffffff; width: 120px; font-size: 20px; font-weight: 400"><i class="material-icons right">arrow_forward</i>NEXT</a></li>
+        </ul>
+        </nav>
+      </div>
+
+
+      <!--Import jQuery before materialize.js-->
+      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+
+      <script type="text/javascript">
+        $(document).ready(function(){
+
+          $('#modal2').modal({ready: function(modal, trigger) {
+          }});
+          $('#modal3').modal({ready: function(modal, trigger) {
+          }});
+          $('#modal1').modal({ready: function(modal, trigger) {
+
+          }});
+        });
+      </script>
+
+      <script>
+      function myFunction() {
+        jQuery(function(){
+          $("#map").fadeIn();
+          $("#sat").fadeOut();
+        });
+      }
+      function myFunct() {
+        jQuery(function(){
+          $("#sat").fadeIn();
+          $("#map").fadeOut();
+        });
+      }
+      </script>
+    <!-- animsition.js -->
+    <script src="animsition.min.js"></script>
+ <script type="text/javascript">
+$(document).ready(function() {
+  $(".animsition").animsition({
+    inClass: 'fade-in',
+    outClass: 'fade-out-left',
+    inDuration: 1500,
+    outDuration: 800,
+    linkElement: '.animsition-link',
+    // e.g. linkElement: 'a:not([target="_blank"]):not([href^="#"])'
+    loading: true,
+    loadingParentElement: 'body', //animsition wrapper element
+    loadingClass: 'animsition-loading',
+    loadingInner: '<img src="Capture.png"/>', // e.g '<img src="loading.svg" />'
+    timeout: false,
+    timeoutCountdown: 5000,
+    onLoadEvent: true,
+    browser: [ 'animation-duration', '-webkit-animation-duration'],
+    // "browser" option allows you to disable the "animsition" in case the css property in the array is not supported by your browser.
+    // The default setting is to disable the "animsition" in a browser that does not support "animation-duration".
+    overlay : false,
+    overlayClass : 'animsition-overlay-slide',
+    overlayParentElement : 'body',
+    transition: function(url){ window.location.href = url; }
+  });
+});
+</script>
+
+    </body>
+  </html>

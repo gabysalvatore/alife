@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+       <!-- animsition.css -->
+    <link rel="stylesheet" href="animsition.min.css">
+      <!--Import Google Icon Font-->
+      <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+      <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+
+    <body class="animsition" style="background-color: #2b101c; overflow:hidden;">
+      <div class="z-depth-1" style = "background-color: #642843; color:#ffffff; padding: 5px; margin:20px 25px 20px 25px;height:68px">
+            <p style="position: absolute; bottom: 923px; right: 230px;font-weight: 400; font-size: 40px" class="header, center-align">What Do I Depict?</p>
+      </div>
+
+      <div class="z-depth-1" style = "background-color: #743e56; color:#ffffff; padding: 5px; margin:20px 25px 20px 25px;height:126px">
+            <p style="width: 696px; position: absolute; bottom: 796px; right: 40px;font-size: 25px" class="caption, center-align">This arch depicts a swarm of deformed creatures and devouring beasts. <span style="font-weight: 700;">Inspect the arch.</span> They may evoke scenes from hell to encourage the churchgoer to lead a virtuous life.</p>
+      </div>
+
+      <div style="border-style:solid; border-width:0px 27px 0px 27px; border-color:#2b101c;height:30vh">
+            <img class="responsive-img" src="what1pic.jpg" style="width:730px;height:404px;display:block;margin:auto;" >
+      </div>
+
+      <div class="z-depth-1" style = "background-color: #642843; color:#ffffff;  padding:0.1px; margin-top:115px; margin-right:25px; margin-left:25px; height:40px;">
+            <p style="position: absolute; bottom: 314px; right: 40px; width: 700px; font-size: 20px; " class="caption, center-align">Click to see other representations of beasts and hell.</p>
+      </div>
+
+      <div  class="z-depth-1" style = "background-color: #743e56; color:#ffffff; padding: 0px; margin:25px; margin-top:0; height: 225px;">
+        <button data-target="modal1" style="box-shadow: none; background-image:url(images/what-1-womanBeast-1.png); background-color:#743e56; background-size: 220px 220px; width:220px; height:220px; margin-right: -10px; margin-top: 5px; margin-left:15px;"class="btn"></button>
+        <div id="modal1" class="modal">
+          <div class="modal-content" style="margin-bottom:0px;">
+            <img class="responsive-img" style="height:60vh;width:50vh;display: block;margin: auto;" src="images/what-1-womanBeast-2.jpg">
+            <p style="color: #743e56;" class="center-align">Beast and the Woman of the Sun, The Silos Apocalypse, Silos, Spain, 1109</p>
+          </div>
+        </div>
+
+        <button data-target="modal2" style="box-shadow: none; background-image:url(images/what-1-lockingHell-1.png); background-size: 240px 220px; width:240px; height:220px; margin-top: 5px;background-color:#743e56; " class="btn"></button>
+        <div id="modal2" class="modal">
+          <div class="modal-content" style="margin-bottom:0px;">
+          <img style="height:60vh;width:48vh;display: block;margin: auto;" src=images/what-1-lockingHell-2.jpg>
+            <p style="color:#743e56;" class="center-align">Angel Locking the Door of Hell, The Winchester Psalter, Winchester, England, mid-12th cent.</p>
+          </div>
+        </div>
+
+        <button data-target="modal3" style="box-shadow: none; background-image:url(images/what-1-harrowingHell-1.png); background-size: 230px 220px;  width:230px; height:220px; margin-left:0px; margin-top: 5px; margin-right:10px;background-color:#743e56;" class="btn"></button>
+        <div id="modal3" class="modal">
+          <div class="modal-content" style="margin-bottom:0px;">
+            <img style="height:30vh;width:55vh;display: block;margin: auto;" src=images/what-1-harrowingHell-2.jpg>
+            <p style="color:#743e56;" class="center-align">Harrowing of Hell, Avila Bible, Avila, Spain, 11th-12th cent.
+            </p>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="nav-wrapper z-depth-3" style="background-color:#743e56; color:#4A766E; height:6vh">
+          <nav style="background-color:#743e56">
+        <a href="#" class="brand-logo"></a>
+        <ul id="nav-mobile" class="left show-on-small">
+          <li><a href="home.html" class="animsition-link" style="background-color: #743e56; color: #ffffff; width: 170px; font-size: 30px; font-weight: 600"><i class="material-icons left">home</i>HOME</a></li>
+          <li><a href="home.html" class="animsition-link" style="background-color: #743e56; color: #ffffff; width: 120px; font-size: 20px; font-weight: 400"><i class="material-icons left">arrow_back</i>BACK</a></li>
+          <li><a style="background-color: #743e56; color: #743e56; width: 345px; font-size: 20px; font-weight: 400">hello</a></li>
+          <li><a href="what-2.html" class="animsition-link" style="background-color: #743e56; color: #ffffff; width: 120px; font-size: 20px; font-weight: 400"><i class="material-icons right">arrow_forward</i>NEXT</a></li>
+        </ul>
+        </nav>
+      </div>
+
+
+      <!--Import jQuery before materialize.js-->
+      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+
+      <script type="text/javascript">
+        $(document).ready(function(){
+          $('#modal1').modal({ready: function(modal, trigger) {
+            $('.carousel').carousel();
+          }});
+          $('#modal2').modal({ready: function(modal, trigger) {
+            $('.carousel').carousel();
+          }});
+          $('#modal3').modal({ready: function(modal, trigger) {
+            $('.carousel').carousel();
+          }});
+        });
+      </script>
+       <script src="animsition.min.js"></script>
+      <script type="text/javascript">
+$(document).ready(function() {
+  $('.animsition').animsition({
+    inClass: 'fade-in',
+    outClass: 'fade-out-left',
+    inDuration: 1500,
+    outDuration: 800,
+    linkElement: '.animsition-link',
+    // e.g. linkElement: 'a:not([target="_blank"]):not([href^="#"])'
+    loading: true,
+    loadingParentElement: 'body', //animsition wrapper element
+    loadingClass: 'animsition-loading',
+    loadingInner: '', // e.g '<img src="loading.svg" />'
+    timeout: false,
+    timeoutCountdown: 5000,
+    onLoadEvent: true,
+    browser: [ 'animation-duration', '-webkit-animation-duration'],
+    // "browser" option allows you to disable the "animsition" in case the css property in the array is not supported by your browser.
+    // The default setting is to disable the "animsition" in a browser that does not support "animation-duration".
+    overlay : false,
+    overlayClass : 'animsition-overlay-slide',
+    overlayParentElement : 'body',
+    transition: function(url){ window.location.href = url; }
+  });
+});
+</script>
+    </body>
+  </html>

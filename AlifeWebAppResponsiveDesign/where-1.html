@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <!-- animsition.css -->
+      <link rel="stylesheet" href="animsition.min.css">
+      <!--Import Google Icon Font-->
+      <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+      <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+      <style>
+        @media only screen and (max-width: 600px) {
+          .center-on-small-only {
+            text-align: center !important;
+          }
+        }
+
+        /*I wrote the below until next comment*/
+        @media only screen and (max-width: 600px) {
+          .background-size-on-small-only {
+            background-size:250px 150px !important;
+            background-position: center !important;
+          }
+        }
+
+        @media only screen and (min-width: 601px) {
+          .background-size-on-medium-and-up {
+            background-size: 30vw 28vw !important;
+            background-position: center !important;
+          }
+        }
+
+        @media only screen and (max-width: 600px) {
+          .width-on-small-only {
+            width: 70% !important;
+          }
+        }
+
+        @media only screen and (min-width: 601px) {
+          .width-on-medium-and-up {
+            width: 90% !important;
+          }
+        }
+
+        @media only screen and (max-width: 600px) {
+          .height-on-small-only {
+            height: 10% !important;
+          }
+        }
+
+        @media only screen and (min-width: 601px) {
+          .height-on-medium-and-up {
+            height: 10% !important;
+          }
+        }
+
+        /* padding above 3 boxes only on small*/
+        @media only screen and (max-width: 600px) {
+          .pad-on-small-only {
+            padding-top: 3vh !important;
+          }
+        }
+        /*I wrote the above*/
+      </style>
+
+    </head>
+
+    <body class="animsition" style="background-color: #0b5345; ">
+        <div class="section container" >
+          <h1 class="header center-on-small-only white-text">Where am I from?</h1>
+          <div class="row center">
+            <h4 class ="header col s12 light center white-text">This arch is from Alife, a small town in Southern Italy near Naples. <span style="font-weight: 700;">Tap the button below to see the overhead view.</span> It was founded by the Romans and built on an ancient grid plan.</h4>
+          </div>
+          <div class = "row center">
+            <div class = "col s12 m6" style="padding-top: 1.5vh; ">
+              <a class="btn waves-effect waves-white center-on-small-only white " onclick="myFunction()"><i class="material-icons left">map</i>Map view</a>
+            </div>
+            <div class = "col s12 m6 " style="padding-top: 1.5vh; ">
+              <a class="btn waves-effect waves-white center-on-small-only white" onclick="myFunct()"><i class="material-icons right">satellite</i>Overhead view</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="section" style ="height: 52vw;">
+          <div class="row center valign-wrapper" style="position: relative">
+              <img id="sat" width="100%" class="responsive-img" style="position: absolute; margin:0%; top:0; right:0; bottom:0; left:0;"src="images/where-1-secondary.jpg" alt="">
+              <img id="map" width="100%" class="responsive-img" style="position: absolute; margin:0%; top:0; right:0; bottom:0; left:0;"src="images/where-1-primary.jpg" alt="">
+          </div>
+        </div>
+
+      <div class="section" style="position: relative; margin: 0%;">
+        <div class="container" >
+          <div class="row">
+            <h4 class="col s12 light center header white-text">Click below to explore photographs of Alife through the ages.</h4>
+          </div>
+
+          <div class="row center"> <!-- this code is for photos that link to modules, need to make sure the photos scale better-->
+            <div class="col s12">
+            <div class="col s12 m4" style="padding-top: 1.5vh; padding-bottom: 1.5 vh">
+              <div class="center promo">
+                <button data-target="modal1" class="background-size-on-small-only background-size-on-medium-and-up width-on-small-only width-on-medium-and-up height-on-small-only height-on-medium-and-up"style=" background-image:url(images/where-1-Rome-4-BW2.jpg); border:5px solid #ffffff; color: #0e6655; font-size: 5vw;"class="btn">Alife Under Ancient Rome </button>
+                <div id="modal1" class="modal" style="height:34vh;width:610px;display:center;background-color:black;">
+                  <video width="610px" loop autoplay> <!-- set for landscape-->
+                    <source src="rome.mp4" type="video/mp4"> <!-- Not on internet explorer 8/earlier versions-->
+                  </video>
+                </div>
+              </div>
+            </div>
+
+            <div class="col s12 m4" style="padding-top: 1.5vh; padding-bottom: 1.5 vh">
+              <div class="center promo">
+                <button data-target="modal2" class="background-size-on-small-only background-size-on-medium-and-up width-on-small-only width-on-medium-and-up height-on-small-only height-on-medium-and-up" style="background-image:url(images/where-1-middle-2-BW.jpg); border:5px solid #ffffff; color: #0e6655; font-size: 5vw;" class="btn">Alife in the Middle Ages</button>
+                <div id="modal2" class="modal" style="height:34vh;width:610px;display:center;background-color:black;">
+                  <video width="610px" loop autoplay> <!-- set for landscape-->
+                    <source src="middle.mp4" type="video/mp4"> <!-- Not on internet explorer 8/earlier versions-->
+                  </video>
+                </div>
+              </div>
+            </div>
+
+            <div class="col s12 m4" style="padding-top: 1.5vh; padding-bottom: 1.5 vh">
+              <div class="center promo">
+                <button data-target="modal3" class="background-size-on-small-only background-size-on-medium-and-up width-on-small-only width-on-medium-and-up height-on-small-only height-on-medium-and-up" style="background-image:url(images/where-1-WW1-3-BW.jpg); border:5px solid #ffffff; color: #0e6655; font-size: 5vw;" class="btn">Alife during World War II</button>
+                <div id="modal3" class="modal" style="height:34vh;width:610px;display:center;background-color:black;">
+                  <video width="610px" loop autoplay> <!-- set for landscape-->
+                    <source src="WWII.mp4" type="video/mp4"> <!-- Not on internet explorer 8/earlier versions-->
+                  </video>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          </div>
+        </div>
+
+        <div class="nav-wrapper " style="z-index:0 background-color:#138d75; color:#4A766E; height:6vh">
+            <nav style="background-color:#138d75;">
+          <a href="#" class="brand-logo"></a>
+
+          <div class = "row">
+            <div class = "col">
+              <a href="home.html" class=" animsition-link left-align" style="background-color: #138d75; color: #ffffff; width: 18vw; font-size: 30px; font-weight: 600"><i class="material-icons left ">home</i>HOME</a>
+            </div>
+            <div class = "col">
+              <a href="home.html" class=" animsition-link left-align" style="background-color: #138d75; color: #ffffff; width: 14vw; font-size: 20px; font-weight: 400"><i class="material-icons left ">arrow_back</i>BACK</a>
+            </div>
+            <div class = "right-align">
+              <a href="where-2.html" class="animsition-link right-align" style="background-color: #138d75; color: #ffffff; width: 120px; font-size: 20px; font-weight: 400"><i class="material-icons right">arrow_forward</i>NEXT</a>
+            </div>
+          </div>
+        </nav>
+      </div>
+
+
+      <!--Import jQuery before materialize.js-->
+      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+
+      <script type="text/javascript">
+        $(document).ready(function(){
+          $('#modal3').modal({ready: function(modal, trigger) {
+          }});
+          $('#modal2').modal({ready: function(modal, trigger) {
+          }});
+          $('#modal1').modal({ready: function(modal, trigger) {
+          }});
+          $('#car1').carousel({fullWidth: true});
+          $('#car2').carousel({fullWidth: true});
+          $('#car3').carousel({fullWidth: true});
+          $('ul.tabs').tabs();
+        });
+      </script>
+
+      <script>
+      function myFunction() {
+        jQuery(function(){
+          $("#map").fadeIn();
+          $("#sat").fadeOut();
+        });
+      }
+      function myFunct() {
+        jQuery(function(){
+          $("#sat").fadeIn();
+          $("#map").fadeOut();
+        });
+      }
+      </script>
+
+    <!-- animsition.js -->
+    <script src="animsition.min.js"></script>
+ <script type="text/javascript">
+$(document).ready(function() {
+  $(".animsition").animsition({
+    inClass: 'fade-in',
+    outClass: 'fade-out-left',
+    inDuration: 1500,
+    outDuration: 800,
+    linkElement: '.animsition-link',
+    // e.g. linkElement: 'a:not([target="_blank"]):not([href^="#"])'
+    loading: true,
+    loadingParentElement: 'body', //animsition wrapper element
+    loadingClass: 'animsition-loading',
+    loadingInner: '<img src="Capture.png"/>', // e.g '<img src="loading.svg" />'
+    timeout: false,
+    timeoutCountdown: 5000,
+    onLoadEvent: true,
+    browser: [ 'animation-duration', '-webkit-animation-duration'],
+    // "browser" option allows you to disable the "animsition" in case the css property in the array is not supported by your browser.
+    // The default setting is to disable the "animsition" in a browser that does not support "animation-duration".
+    overlay : false,
+    overlayClass : 'animsition-overlay-slide',
+    overlayParentElement : 'body',
+    transition: function(url){ window.location.href = url; }
+  });
+});
+</script>
+
+    </body>
+  </html>

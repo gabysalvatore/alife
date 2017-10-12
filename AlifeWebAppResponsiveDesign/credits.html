@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+    <!-- animsition.css -->
+    <link rel="stylesheet" href="animsition.min.css">
+    <!-- jQuery -->
+
+      <!--Import Google Icon Font-->
+      <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+      <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+
+    <body class="animsition" style="background-color: #0b5345; overflow:hidden;">
+
+        <div class="z-depth-1" style = "background-color: #0e6655; color:#ffffff; padding: 20px; margin:20px 20px 20px 20px; height:930px">
+            <p class="center-align"style="color: #ffffff; line-height: 20px; font-size: 40px; font-weight:700;"> Alife App Project  </p>
+            <p class="center-align"style="color: #ffffff; line-height: 20px; font-size: 40px; font-weight:700;"> Duke University, 2017</p>
+        <br2>
+            <p class="center-align"style="color: #ffffff; line-height: 20px; font-size: 30px; font-weight:400;"> Contribuitors:  </p>
+            <p class="center-align"style="color: #ffffff; line-height: 25px; font-size: 20px;"> Caroline Bruzelius (Anne M. Cogan Professor of Art, Art History and Visual Studies), Lucas Giles (MA Digital Art History, Duke '17), Gabriella Salvatore ( Duke '19), Lucian Li (Duke '20), Marina Frattaroli (Duke '19), Lauren Jones (Duke '19), and Jessica Chen (Duke '20) (pictured below)</p>
+            <img class="responsive-img" src="images/team.jpg" style="width:450px;height:170px;display:block;margin:auto;" >
+            <p class="center-align"style="color: #ffffff; line-height: 20px; font-size: 20px;"> Special thanks to: Mark Olson, Edward Triplett, Victoria Szabo, Sheila Dillon and Adam Spring </p>
+            <br2>
+            <p class="center-align"style="color: #ffffff; line-height: 20px; font-size: 30px; font-weight:400;"> Resources:  </p>
+            <p class="center-align"style="color: #ffffff; line-height: 20px; font-size: 20px;"> Christian Heck and Remy Cordonnier,<span style="font-style: italic;">The Grand Medieval Bestiary: Animals in Illuminated Manuscripts</span> (New York, 2012). </p>
+            <p class="center-align"style="color: #ffffff; line-height: 20px; font-size: 20px;"> David Macaulay, <span style="font-style: italic;">City: A Story of Roman Planning and Construction</span> (Boston, 1974). </p>
+            <p class="center-align"style="color: #ffffff; line-height: 20px; font-size: 20px;"> Scot  McKendrick and Kathleen  Doyle,<span style="font-style: italic;">The  Art  of  the  Bible:  Illuminated  Manuscripts from the Medieval World</span> (London, 2016)  </p>
+            <p class="center-align"style="color: #ffffff; line-height: 20px; font-size: 20px;"> Luigi Cielo, <span style="font-style: italic;">La Cattedrale Normanna di Alife</span> (Naples, 1984)  </p>
+            <p class="center-align"style="color: #ffffff; line-height: 20px; font-size: 20px;"> National Library of New Zealand  </p>
+
+        </div>
+
+        <div class="nav-wrapper z-depth-3" style="background-color:#138d75; color:#4A766E; height:6vh">
+            <nav style="background-color:#138d75;">
+          <a href="#" class="brand-logo"></a>
+          <ul id="nav-mobile" class="left show-on-small">
+            <li><a href="home.html" class="animsition-link" style="background-color: #138d75; color: #ffffff; width: 170px; font-size: 30px; font-weight: 600"><i class="material-icons left ">home</i>HOME</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+        <script type="text/javascript" src="js/materialize.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+      <!-- animsition.js -->
+      <script src="animsition.min.js"></script>
+      <script type="text/javascript">
+          $(document).ready(function() {
+            $('.animsition').animsition({
+              inClass: 'fade-in',
+              outClass: 'fade-out-left',
+              inDuration: 1500,
+              outDuration: 800,
+              linkElement: '.animsition-link',
+              // e.g. linkElement: 'a:not([target="_blank"]):not([href^="#"])'
+              loading: true,
+              loadingParentElement: 'body', //animsition wrapper element
+              loadingClass: 'animsition-loading',
+              loadingInner: '', // e.g '<img src="loading.svg" />'
+              timeout: false,
+              timeoutCountdown: 5000,
+              onLoadEvent: true,
+              browser: [ 'animation-duration', '-webkit-animation-duration'],
+              // "browser" option allows you to disable the "animsition" in case the css property in the array is not supported by your browser.
+              // The default setting is to disable the "animsition" in a browser that does not support "animation-duration".
+              overlay : false,
+              overlayClass : 'animsition-overlay-slide',
+              overlayParentElement : 'body',
+              transition: function(url){ window.location.href = url; }
+            });
+          });
+      </script>
+    </body>
+  </html>
